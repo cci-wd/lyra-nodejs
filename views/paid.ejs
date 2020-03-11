@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>NodeJS | Epay NC</title>
+    </head>
+    <body>
+      <% if(!checkHash) { %>
+        <p>Something went wrong!</p>
+      <% } else if(parsedAnswer.orderStatus !== 'PAID') { %>
+        <p>Transaction not paid!</p>
+      <% } else { %>
+        <p>Transaction paid!</p>
+      <% } %>
+    </body>
+</html>
